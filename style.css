@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{margin:0px; padding:0px; height:100%; width:100%;}
+.canvas{height:auto; width:50%; margin:30px; border:0px solid #CCC; padding:30px; border-radius:5px;}
+.circle{height:150px; width:150px; border:1px solid #FFF; border-radius:40px; box-shadow:0 0 5px 5px #CCC;}
+.node{height:2px; width:2px; border:1px solid #000; border-radius:15px; background:#FFF;}
+
+#square1{background:#FF6600; margin:50px auto;}
+#square2{background:#FF6600; margin:50px 0 0 0;}
+#square3{background:#660033; margin:150px 0 0 0px; display:none;}
+#square4{background:#669900; margin:200px 0 0 0px; display:none;}
+
+.container{}
+
+#node{}
