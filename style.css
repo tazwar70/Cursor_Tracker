@@ -1,16 +1,108 @@
 @charset "utf-8";
 /* CSS Document */
 
-html,body{margin:0px; padding:0px; height:100%; width:100%;}
-.canvas{height:auto; width:50%; margin:30px; border:0px solid #CCC; padding:30px; border-radius:5px;}
-.circle{height:150px; width:150px; border:1px solid #FFF; border-radius:40px; box-shadow:0 0 5px 5px #CCC;}
-.node{height:2px; width:2px; border:1px solid #000; border-radius:15px; background:#FFF;}
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+html{
+    overflow: hidden;
+}
 
-#square1{background:#FF6600; margin:50px auto;}
-#square2{background:#FF6600; margin:50px 0 0 0;}
-#square3{background:#660033; margin:150px 0 0 0px; display:none;}
-#square4{background:#669900; margin:200px 0 0 0px; display:none;}
+.canvas {
+    height: auto;
+    width: 50%;
+    margin: 30px;
+    border: 0px solid #CCC;
+    padding: 30px;
+    border-radius: 5px;
+}
 
-.container{}
+.circle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #FFF;
+    border-radius: 40px;
+    box-shadow: 0 0 5px 5px #CCC;
+}
 
-#node{}
+.node {
+    height: 20px;
+    width: 20px;
+    border: transparent;
+    border-radius: 50%;
+
+    background: #ff0000;
+    box-shadow: inset 11px 11px 21px #e60000, 
+                inset -11px -11px 21px #ff0000;
+}
+
+h1{
+    color: white;
+}
+
+#application{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    
+background: #35ca93;
+box-shadow: inset 11px 11px 21px #30b684, 
+            inset -11px -11px 21px #3adea2;
+}
+#application input{
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    margin: 5px;
+    border-color: transparent;
+
+    border-radius: 13px;
+background: #55b9f3;
+box-shadow:  2px 2px 3px #4eaae0, 
+             -2px -2px 3px #5cc8ff;
+}
+#application input:hover{
+    border-radius: 13px;
+background: linear-gradient(145deg, #4da7db, #5bc6ff);
+box-shadow:  2px 2px 3px #4da7db, 
+             -2px -2px 3px #5eccff;
+}
+#application input:active{
+    border-radius: 13px;
+background: #55b9f3;
+box-shadow: inset 2px 2px 3px #4da7db, 
+            inset -2px -2px 3px #5eccff;
+}
+
+
+#square1 {
+    background: #FF6600;
+    margin: 50px auto;
+}
+
+#square2 {
+    background: #FF6600;
+    margin: 50px 0 0 0;
+}
+
+#square3 {
+    background: #660033;
+    margin: 150px 0 0 0px;
+    display: none;
+}
+
+#square4 {
+    background: #669900;
+    margin: 200px 0 0 0px;
+    display: none;
+}
+
+.container {}
+
+#node {}
